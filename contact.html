@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main2.css">
+
+
+
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .contact{
+            max-width: 1000px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 20px;
+            flex-direction:  column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .contact-img{
+            width: 100%;
+        }
+
+        .contact-form{
+            width: 100%;
+        }
+
+        .contact-form textarea{
+            width: 100%;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 10px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: blue;
+            color: #fff;
+            padding: 8px 35px;
+            border: none;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        @media (min-width: 768px) {
+            .contact{
+                flex-direction: row;
+            }
+            .contact-img{
+                width: 50%;
+            }
+            .contact-form{
+                width: 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+       <div class="flex-container contact">
+        <div class="contact-img">
+            <img src="istockphoto-1281150061-170667a.jpg" alt="" width="100%" />
+        </div>
+        <div class="contact-form">
+            <h1>Get in touch</h1>
+            <input type="text" placeholder="Enter Name" required/>
+            <input type="email" placeholder="Enter Email" required/>
+            <textarea  rows="10"></textarea>
+            <input type="submit" value="Submit" />
+        </div>
+       </div>
+
+
+    </main>
+    
+</body>
+</html>
